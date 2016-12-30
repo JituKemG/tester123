@@ -3,6 +3,7 @@ import ObjectMapper
 import Foundation
 
 class ProvincesWrapper: NSObject, Mappable {
+
     var userId: NSNumber?
     var identifier: NSNumber?
     var title: String?
