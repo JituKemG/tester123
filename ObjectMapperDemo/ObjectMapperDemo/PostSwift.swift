@@ -8,7 +8,6 @@ class ProvincesWrapper: NSObject, Mappable {
     var identifier: NSNumber?
     var title: String?
     var body: String?
-    var body1: String?
     
     // MARK: - object mapping
     
@@ -21,7 +20,9 @@ class ProvincesWrapper: NSObject, Mappable {
         identifier  <- map["id"]
         title       <- map["title"]
         body        <- map["body"]
-        body1        <- map["body1"]
+        
+        
+        
     }
     
 }
