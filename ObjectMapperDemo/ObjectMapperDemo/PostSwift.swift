@@ -3,11 +3,11 @@ import ObjectMapper
 import Foundation
 
 class ProvincesWrapper: NSObject, Mappable {
-
+    
     var userId: NSNumber?
     var identifier: NSNumber?
     var title: String?
-    var body: String?
+    var body: String?    
     // MARK: - object mapping
     
     required init?(map: Map) {
