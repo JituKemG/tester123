@@ -39,19 +39,19 @@ class ViewController: UIViewController {
 //            let dictionaryData = resultArray[0]
 //            for dictionaryData in resultArray
 //            {
-                do {
-//                    let decoded = try JSONSerialization.data(withJSONObject: dictionaryData, options: .prettyPrinted)
-//                    let  stringResp = String(data: decoded, encoding: String.Encoding.utf8)
-//                        print(decoded)
-//                    print(stringResp!)
-//                    let user = ProvincesWrapper(JSONString: stringResp!)
-//                    print(user)
-
-
-                } catch {
-                    print(error.localizedDescription)
-                }
-//            }
+//                do {
+////                    let decoded = try JSONSerialization.data(withJSONObject: dictionaryData, options: .prettyPrinted)
+////                    let  stringResp = String(data: decoded, encoding: String.Encoding.utf8)
+////                        print(decoded)
+////                    print(stringResp!)
+////                    let user = ProvincesWrapper(JSONString: stringResp!)
+////                    print(user)
+//
+//
+//                } catch {
+//                    print(error.localizedDescription)
+//                }
+////            }
 //
         }, withFailureBlock: {
             (error) in
