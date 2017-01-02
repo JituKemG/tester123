@@ -19,13 +19,12 @@ class UserSwift: NSObject, Mappable {
     var phone: String?
     var website: String?
     // MARK: - object mapping
-    
+
     required init?(map: Map) {
         
     }
-    
+
     func mapping(map: Map) {
-        
         userId      <- map["id"]
         name  <- map["name"]
         username       <- map["username"]
@@ -34,17 +33,17 @@ class UserSwift: NSObject, Mappable {
         phone        <- map["phone"]
         website        <- map["website"]
     }
-    
+
 }
 
 class addressSwift: NSObject, Mappable {
+
     var street: String?
     var suite: String?
     var city: String?
     var zipcode: String?
     var lat: Float = 0
     var lng: Float = 0
-
     // MARK: - object mapping
     var asd:String?
 
@@ -58,10 +57,11 @@ class addressSwift: NSObject, Mappable {
         }
         return nil
     })
+
     required init?(map: Map) {
-        
+
     }
-    
+
     func mapping(map: Map) {
         street      <- map["street"]
         suite  <- map["suite"]
@@ -70,7 +70,6 @@ class addressSwift: NSObject, Mappable {
         lat        <- (map["geo.lat"], transform)
         lng        <- (map["geo.lng"], transform)
         asd        <- map["asd"]
-
     }
-    
+
 }
