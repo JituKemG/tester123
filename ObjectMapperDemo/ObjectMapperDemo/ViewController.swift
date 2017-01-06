@@ -28,30 +28,31 @@ class ViewController: UIViewController {
         shared.invokeHTTPRequestGET("https://jsonplaceholder.typicode.com/users", withToken: false, token: "", withSucessBlock: {
             (result) in
             print("hi")
-//            let resultArray = result as! NSArray
-//            let dictionaryData = resultArray[0]
+            let resultArray = result as! NSArray
+            let dictionaryData = resultArray[0]
 
             let customerArray = Mapper<UserSwift>().mapArray(JSONArray: result as! [[String : Any]])
             print(customerArray) // customerArray is of type [Customer]?
 
-//            var customer = Mapper<PostSwift>().mapArray(JSONArray: resultArray)! //Swift 3
+//            var customer = Mapper<UserSwift>().map(JSONObject: dictionaryData)
 
 //            let dictionaryData = resultArray[0]
 //            for dictionaryData in resultArray
-//            {
-//                do {
-////                    let decoded = try JSONSerialization.data(withJSONObject: dictionaryData, options: .prettyPrinted)
-////                    let  stringResp = String(data: decoded, encoding: String.Encoding.utf8)
-////                        print(decoded)
-////                    print(stringResp!)
-////                    let user = ProvincesWrapper(JSONString: stringResp!)
-////                    print(user)
-//
-//
-//                } catch {
-//                    print(error.localizedDescription)
-//                }
-////            }
+//            {.
+            
+                do {
+//                    let decoded = try JSONSerialization.data(withJSONObject: dictionaryData, options: .prettyPrinted)
+//                    let  stringResp = String(data: decoded, encoding: String.Encoding.utf8)
+//                        print(decoded)
+//                    print(stringResp!)
+//                    let user = ProvincesWrapper(JSONString: stringResp!)
+//                    print(user)
+
+
+                } catch {
+                    print(error.localizedDescription)
+                }
+//            }
 //
         }, withFailureBlock: {
             (error) in
